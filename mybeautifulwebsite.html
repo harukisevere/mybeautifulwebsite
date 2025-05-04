@@ -1,147 +1,198 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
-body {
+        body {
             font-family: 'Cal Sans', sans-serif;
-            padding-top: 50px;
-            align-items: center;
+            padding-top: 30px;
+            background: white;
+            margin-right: 10px;
+            line-height: 1.2;
         }
 
         h1 {
             font-weight: bold; 
             text-align: center; 
             font-size: 40px;
+            margin-bottom: 20px;
         }
         
         p {
             font-weight: 400;
             text-align: justify;
-            
             font-size: 21px;
+            margin-bottom: 15px;
             
         }
         
         .container {
-            max-width: 60rem; /* Ограничение ширины */
-            margin: auto;
-            
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         
         ul {
             font-weight: 400;
             text-align: left;
-            
             font-size: 21px;
+            margin-left: 20px;
+            margin-bottom: 20px;
         }
         
         .p1 {
             font-weight: 400;
-            text-align: normal;
+            text-align: justify;
             padding-left: 160px;
             padding-right: 30px;
             font-size: 19px;
+            margin: 15px 0;
         }
         
         table {
             font-size: 18px;
+            margin: 20px auto;
+            width: 50%;
+            max-width: 600px;
+            line-height: 1.4;
         }
 
-        @media (max-width: 599) {
-         body {
-             
-         }
+        .img-tall {
+            width: auto;
+            height: 600px;
+            display: block;
+            margin: 20px auto;
         }
         
-</style>
+        .img-square {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+        }
+
+        @media (max-width: 768px) {
+            .img-tall {
+                height: 300px;
+                width: auto;
+            }
+            
+            .img-square {
+                width: 90%;
+                height: auto;
+                max-height: 400px;
+            }
+            
+            .p1 {
+                padding-left: 30px;
+                padding-right: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .img-tall {
+                height: 250px;
+            }
+            
+            .img-square {
+                max-height: 300px;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            p, ul {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div style="text-align:center;">
-    <img src='https://u2.9111s.ru/uploads/202302/27/f7f6fb3c5313f44f7ee1010c68422f88.jpg' width=auto height=500>
+        <img class="img-tall" src='https://u2.9111s.ru/uploads/202302/27/f7f6fb3c5313f44f7ee1010c68422f88.jpg'>
     </div>
-    <h1> my beautiful website </h1>
+    
+    <h1>my beautiful website</h1>
     
     <div class="container">
-        <p> idk what should I tell here so i decided to talk about japanese language </p>
-        <p> japanese writing uses several types of symbols: </p>
+        <p>idk what should I tell here so i decided to talk about japanese language</p>
+        <p>japanese writing uses several types of symbols:</p>
         <ul type=square>
-            <li> hiragana ひらがな </li>
-            <li> katakana カタカナ</li>
-            <li> kanji 漢字 </li>
+            <li>hiragana ひらがな</li>
+            <li>katakana カタカナ</li>
+            <li>kanji 漢字</li>
         </ul>
-        <p> let's talk about each in more details </p>
+        <p>let's talk about each in more details</p>
     </div>
 
     <div style="text-align:center;">
-    <img src='https://i.pinimg.com/736x/8b/f5/3c/8bf53ce1ad8f450ecc85c7cf8556e4f0.jpg' width=auto height=500>
+        <img class="img-tall" src='https://i.pinimg.com/736x/8b/f5/3c/8bf53ce1ad8f450ecc85c7cf8556e4f0.jpg'>
     </div>
     
     <div class="container">
-    <p> kanji are chinese characters adapted to write japanese around the 3rd-5th centuries CE. kanji have two sounds — chinese on'yomi and japanese kun'yomi, both used in different cases. each kanji expresses a certain concept, carries its own meaning, and these concepts can become more complex if you put several kanji next to each other. this is an echo of the analytical nature of chinese writing. kanji make up the beginning, the unchangeable part of japanese words. there are a lot of kanji, and of course most japanese people cannot write even half of them from memory. the vocabulary of the average japanese person includes about 2,000 of them, and the most educated people know up to 5,000 kanji.</p>
-    <p class='p1'> the character 水 means water; in the meaning of water, its japanese pronunciation 
-    (kun'yomi) — mizu is used; and in the word 水滴 — a drop of water — 水 is already 
-    read according to on'yomi — sui.</p>
+        <p>kanji are chinese characters adapted to write japanese around the 3rd-5th centuries CE. kanji have two sounds — chinese on'yomi and japanese kun'yomi, both used in different cases. each kanji expresses a certain concept, carries its own meaning, and these concepts can become more complex if you put several kanji next to each other. this is an echo of the analytical nature of chinese writing. kanji make up the beginning, the unchangeable part of japanese words. there are a lot of kanji, and of course most japanese people cannot write even half of them from memory. the vocabulary of the average japanese person includes about 2,000 of them, and the most educated people know up to 5,000 kanji.</p>
+        <p class='p1'>the character 水 means water; in the meaning of water, its japanese pronunciation (kun'yomi) — mizu is used; and in the word 水滴 — a drop of water — 水 is already read according to on'yomi — sui.</p>
     </div>
 
     <div style='text-align:center;'>
-    <img src='https://i.pinimg.com/736x/bf/07/00/bf07002a4edc8ef688449b146a09a73f.jpg' width=auto height=500>
+        <img class="img-square" src='https://i.pinimg.com/736x/bf/07/00/bf07002a4edc8ef688449b146a09a73f.jpg'>
     </div>
     
     <div class="container">
-    <p> hiragana is a syllabic alphabet that developed from сhinese cursive writing. hiragana symbols do not carry their own meaning and are used for recording the language by sound. оn average, they  are  used  to  write  the  "tails"  (suffixes)  of  japanese  words, but it can also be written exclusively with it: the less educated the intended readers of the text, the less kanji and more hiragana there are. it has a soft, smooth form, which is why in some texts it can even be used to emphasize female speech. unlike kanji, hiragana characters are limited to a small number of 48, and their diacritic variations: for example, か ka is read as が ga when the stressed diacritic ゛— handakuten — is added to the character.</p>
-    <p class='p1'>私の黒い傘は美しい — [watashi no kurou kasa wa utsukushī] — "my black umbrella is beautiful". it can be written with hiragana only: わたくし の くろい かさ は うつくしい, but it's shorter, more readable and more beautiful to write it with kanji. </p>
+        <p> hiragana is a syllabic alphabet that developed from сhinese cursive writing. hiragana symbols do not carry their own meaning and are used for recording the language by sound. оn average, they  are  used  to  write  the  "tails"  (suffixes)  of  japanese  words, but it can also be written exclusively with it: the less educated the intended readers of the text, the less kanji and more hiragana there are. it has a soft, smooth form, which is why in some texts it can even be used to emphasize female speech. unlike kanji, hiragana characters are limited to a small number of 48, and their diacritic variations: for example, か ka is read as が ga when the stressed diacritic ゛— handakuten — is added to the character.</p>
+        <p class='p1'>私の黒い傘は美しい — [watashi no kurou kasa wa utsukushī] — "my black umbrella is beautiful". it can be written with hiragana only: わたくし の くろい かさ は うつくしい, but it's shorter, more readable and more beautiful to write it with kanji.</p>
     </div>
      
     <div style='text-align:center;'>
-    <img src='https://i.pinimg.com/736x/b5/56/f5/b556f5be4a96bde57cbd40a1f3917b5d.jpg' width=auto height=500>
+        <img class="img-square" src='https://i.pinimg.com/736x/b5/56/f5/b556f5be4a96bde57cbd40a1f3917b5d.jpg'>
     </div>
     
     <div class="container">
-    <p> katakana is a syllabary that sounds exactly like hiragana, but is written differently. katakana literally means "fragmented kana", since its characters are formed from components of more complex kanji. the use of katakana syllabary is comparable to italics in english; it is mainly used to transcribe foreign words into japanese and to write loanwords, as well as for emphasis, to represent onomatopoeia, for technical and scientific terms, and for the names of plants, animals, minerals, and often japanese companies. japanese is a very non-conservative language, which is why it is very rich in loanwords written in katakana</p>
-    <p class='p1'> in the picture below, right in the middle, there is the inscription カラオケ — karaoke. this word comes from オーケストラ [ōkesutora] — the japanese spelling of the english word "orchestra", so it is also written in katakana.
-    </p>   
+        <p>katakana is a syllabary that sounds exactly like hiragana, but is written differently. katakana literally means "fragmented kana", since its characters are formed from components of more complex kanji. the use of katakana syllabary is comparable to italics in english; it is mainly used to transcribe foreign words into japanese and to write loanwords, as well as for emphasis, to represent onomatopoeia, for technical and scientific terms, and for the names of plants, animals, minerals, and often japanese companies. japanese is a very non-conservative language, which is why it is very rich in loanwords written in katakana</p>
+        <p class='p1'>in the picture below, right in the middle, there is the inscription カラオケ — karaoke. this word comes from オーケストラ [ōkesutora] — the japanese spelling of the english word "orchestra", so it is also written in katakana.</p>   
     </div>
     
     <div style='text-align:center;'>
-    <img src='https://i.pinimg.com/736x/da/93/c4/da93c465c5ca207f09a9b5d24ccaaf54.jpg' width=auto height=500>
+        <img class="img-square" src='https://i.pinimg.com/736x/da/93/c4/da93c465c5ca207f09a9b5d24ccaaf54.jpg'>
     </div>
     
     <div class="container">
-    <p> in addition to these three, in some cases the latin alphabet is used - romaji, but not as a separate script, but rather as a supplement to the existing ones. romaji is used on tourist signs, on the internet and of course in textbooks. for example, a t-shirt would be Ｔシャツ [tī shatsu]. </p>
-    
-    <p> here's the table with some japanese words written in different scripts; unused (but possible) variants are marked in a brighter color: </p>
-    
-    <table align=center>
-        <tr>
-            <th> kanji
-            <th> hiragana
-            <th> katakana
-            <th> romaji
-            <th> english
-        <tr>
-            <td> 私
-            <td> わたし		
-            <td bgcolor=#E6E6FA> ワタシ
-            <td> watashi
-            <td> i
-        <tr>
-            <td> 金魚			
-            <td> きんぎょ
-            <td bgcolor=#E6E6FA> キンギョ
-            <td> kingyo
-            <td> goldwish
-        <tr>
-            <td> —			
-            <td  bgcolor=#E6E6FA> こーと
-            <td> コート
-            <td> kōto
-            <td> coat
-    </table>
+        <p>in addition to these three, in some cases the latin alphabet is used - romaji, but not as a separate script, but rather as a supplement to the existing ones. romaji is used on tourist signs, on the internet and of course in textbooks. for example, a t-shirt would be Ｔシャツ [tī shatsu].</p>
+        
+        <p>here's the table with some japanese words written in different scripts; unused (but possible) variants are marked in a brighter color:</p>
+        
+        <table>
+            <tr>
+                <th>kanji</th>
+                <th>hiragana</th>
+                <th>katakana</th>
+                <th>romaji</th>
+                <th>english</th>
+            </tr>
+            <tr>
+                <td>私</td>
+                <td>わたし</td>
+                <td bgcolor=#E6E6FA>ワタシ</td>
+                <td>watashi</td>
+                <td>i</td>
+            </tr>
+            <tr>
+                <td>金魚</td>
+                <td>きんぎょ</td>
+                <td bgcolor=#E6E6FA>キンギョ</td>
+                <td>kingyo</td>
+                <td>goldfish</td>
+            </tr>
+            <tr>
+                <td>—</td>
+                <td bgcolor=#E6E6FA>こーと</td>
+                <td>コート</td>
+                <td>kōto</td>
+                <td>coat</td>
+            </tr>
+        </table>
     </div>
-    
-    
-
 </body>
 </html>
