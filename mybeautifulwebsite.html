@@ -23,7 +23,6 @@
             text-align: justify;
             font-size: 21px;
             margin-bottom: 15px;
-            
         }
         
         .container {
@@ -33,6 +32,22 @@
         }
         
         ul {
+            font-weight: 400;
+            text-align: left;
+            font-size: 21px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        ol {
+            font-weight: 400;
+            text-align: left;
+            font-size: 21px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        dl {
             font-weight: 400;
             text-align: left;
             font-size: 21px;
@@ -71,6 +86,27 @@
             display: block;
             margin: 20px auto;
         }
+        
+        .img-wide {
+            width: 500px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        a {
+           color: #674AA2;  /* Цвет обычной ссылки (например, коралловый) */
+           text-decoration: none;  /* Убираем подчёркивание (опционально) */
+        }
+
+        /* При наведении курсора */
+        a:hover {
+           color: #9A7BD0;  /* Цвет при наведении (бирюзовый) */
+           text-decoration: underline;  /* Добавляем подчёркивание */
+        
+        a:active {
+            color: #3CB371; /* Цвет активных ссылок */
+        }
 
         @media (max-width: 768px) {
             .img-tall {
@@ -79,6 +115,12 @@
             }
             
             .img-square {
+                width: 90%;
+                height: auto;
+                max-height: 400px;
+            }
+            
+            .img-wide {
                 width: 90%;
                 height: auto;
                 max-height: 400px;
@@ -104,7 +146,7 @@
                 font-size: 32px;
             }
             
-            p, ul {
+            p, ul, ol, dl {
                 font-size: 18px;
             }
 
@@ -207,5 +249,36 @@
             </tr>
         </table>
     </div>
-</body>
+    
+    <!-- pic -->
+    <!-- example-sentence with audio-file -->
+    
+    
+    <div style='text-align:center;'>
+        <img class="img-wide" src='https://i.pinimg.com/736x/f9/01/25/f90125c4c15e39850e08a1077cfac922.jpg'>
+    </div>
+    
+    <div class="container">
+        <p> now that we've covered the basic structure of japanese, we need to understand how it can be learned. here are a few options: </p>
+        <ol type=1>
+            <li> <a href='https://www.duolingo.com/learn'> duolingo </a> — an app with daily exercises, including listening and even writing. it makes learning kana easy, and is a low-effort option for further learning. </li>
+            <li> <a href='https://jisho.org/search/nihongo'> jisho </a> — a dictionary that I use myself. it provides words in different spellings, example words in sentences, and even audio.
+            <li> <a href='https://kanji.garden/'> kanji garden </a> — an app that's designed for learning kanji, as the name suggests. it includes mnemonic phrases, example words containing kanji, on'yomi and kun'yomi readings, and animated stroke order diagrams.
+            <li> <a href='https://jpfmw.ru/ru/yaponskij-yazyik/uchebnyie-materialyi-irodori/'> irodori </a> — a series of free textbooks developed by the japan foundation. irodori is based on the shadowing method - simultaneous repetition of heard phrases. shadowing helps in developing listening and speaking skills, and also helps to get rid of an accent. the program also includes lessons on japanese customs, traditions, and social norms.
+       </ol>
+    </div> 
+    
+    <!-- dark pink mystiq sakura pic -->
+    <div style='align:center;'>
+        <img class='img-square' src='https://i.pinimg.com/736x/b8/e5/5e/b8e55eb976af013d6f2db00e419ae3ea.jpg'>
+    </div>
+    
+    <div class="container">
+        <p style='color: #674AA2'> at this moment, like a cherry blossom petal drifting away, our lesson gently concludes.</p>
+        
+        <p> thank you for reading my beautiful website! <br>
+        for feedback, contact me on telegram: <a href='https://t.me/haruki_severe'>@haruki_severe</a> </p>
+        <p> いってらっしゃい！</p>
+    </div>
+</body> 
 </html>
